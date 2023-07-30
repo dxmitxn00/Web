@@ -1,2 +1,2 @@
-# Web
-Java / JDBC / HTML
+# Web(Java)
+JDBC / HTML
