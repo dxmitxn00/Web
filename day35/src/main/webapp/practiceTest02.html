@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+   input {
+      border: 2px solid black;
+      width: 500px;
+      height: 30px;
+      padding: 10px;
+   }
+</style>
+</head>
+<body>
+	
+	 <input type="text" onkeydown="test(event)" placeholder="목록 입력">
+	 
+	 <script type="text/javascript">
+		 while(true){
+		 	console.log(event.keyCode);
+		 	if(event.keyCode == 13){
+				console.log(event.target);
+			 	document.write('<ul><li>'+event.target.value+'</li></ul>')
+		 	}
+		 }
+	 </script>
+
+</body>
+</html>

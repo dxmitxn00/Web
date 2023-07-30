@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연습문제01 풀이</title>
+</head>
+<body>
+	
+	<h1 id="header"></h1>
+	
+	<script type="text/javascript">
+		var input=prompt('아이디를 입력하세요.');
+		
+		if(input == 'admin'){
+			document.querySelector('#header').append('관리자페이지입니다.');
+		}
+		else{
+			document.querySelector('#header').append('안녕하세요, '+input+'님!');
+		}
+	</script>
+	
+</body>
+</html>

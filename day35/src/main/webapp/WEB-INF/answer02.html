@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연습문제02_풀이</title>
+<style>
+   input {
+      width: 50%;
+   }
+   #list > li {
+      margin: 5px;
+   }
+</style>
+</head>
+<body>
+
+   <input type="text" placeholder="내용입력후 엔터">
+   
+   <ul id="list">
+      <li>1번째 목록</li>
+   </ul>
+
+<script type="text/javascript">
+   var obj=document.querySelector('input'); // input요소를 obj로 받아와
+   obj.onkeydown=function(event){ // 키 다운하면 함수 호출해
+      if(event.keyCode == 13){ // 혹시 엔터쳣어?
+         var elem=document.createElement('li'); // 목록 요소 만들어
+         
+         var msg=document.createTextNode(this.value); // 입력받은 값을 넣어
+         elem.appendChild(msg); // 그 값을 추가해
+         
+         document.getElementById('list').appendChild(elem);
+      }
+   }
+</script>
+
+</body>
+</html>

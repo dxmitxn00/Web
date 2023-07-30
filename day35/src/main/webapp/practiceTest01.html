@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연습문제01</title>
+<style type="text/css">
+	#bluebox{
+		width: 100px;
+		height: 100px;
+		background-color: royalblue;
+		cursor: pointer;
+		
+	}
+	.greenbox{
+		width: 100px;
+		height: 100px;
+		background-color: mediumspringgreen;
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+	
+	<div id="bluebox" onmousedown="changeColor(this)"></div>
+	<div class="greenbox" onmouseover="changeShape(this)"></div>
+	
+	<script type="text/javascript">
+		function changeColor(obj){
+			obj.style.backgroundColor='lightpink';
+		}
+		
+		function changeShape(obj){
+			obj.style.borderRadius='50%';
+			
+		}
+	</script>
+
+</body>
+</html>

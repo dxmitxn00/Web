@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연습문제02</title>
+</head>
+<!-- padding은 요소 안에 여백을 띄움 / margin은 요소를 여백 띄워서 자리 배치-->
+<style type="text/css">
+	#box{
+		width: 250px;
+		height: 250px;
+		background-color: lightgray;
+		margin: 10px; 
+	}
+</style>
+<body>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$('.btn1').click(function(){
+				$('#box').hide();
+			})
+			
+			$('.btn2').click(function(){
+				$('#box').show();
+			})
+			
+			$('.btn3').click(function(){
+				$('#box').toggle();
+			});
+		});
+		
+	</script>
+	
+	<div id="box"></div>
+	
+	<button class="btn1">버튼 1</button>
+	<button class="btn2">버튼 2</button>
+	<button class="btn3">버튼 3</button>
+
+</body>
+</html>
